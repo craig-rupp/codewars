@@ -17,3 +17,20 @@ var str = arr.join(' ');
 
 //first problem
 
+//methods of math -- round, ceil & floor
+
+function roundIt(n){
+  var first = n.toString().split(".");
+  console.log(first);
+  //coding here...
+   if(first[0].length > first[1].length){
+     return Math.floor(n);
+   } else if (first[0].length < first[1].length){
+     return Math.ceil(n);
+   } 
+   return Math.round(n);   
+}
+
+// roundIt(Math.ceil(3.45));
+// roundIt(Math.floor(3.45));
+// roundIt(Math.round(34.56));
